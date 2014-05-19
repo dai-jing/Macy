@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="50g-0v-0i5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="4Gy-7S-Jes">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="50g-0v-0i5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dNv-b5-bQ2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fxH-ce-yqJ" kind="relationship" relationship="rootViewController" id="mGw-PY-Xge"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K1u-CQ-v17" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="306"/>
+        </scene>
+        <!--View Controller - Main-->
+        <scene sceneID="HEs-gq-BNl">
+            <objects>
+                <viewController id="fxH-ce-yqJ" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="laI-hj-Yeg"/>
+                        <viewControllerLayoutGuide type="bottom" id="1H0-Dm-ecx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qRE-nM-Izh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rs-ra-VXq">
+                                <rect key="frame" x="98" y="179" width="124" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Product">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showProducts:" destination="fxH-ce-yqJ" eventType="touchUpInside" id="0yP-Ai-dIl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tu-1z-5bW">
+                                <rect key="frame" x="98" y="275" width="124" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Product">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createProduct:" destination="fxH-ce-yqJ" eventType="touchUpInside" id="qh3-2B-iqF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2tu-1z-5bW" firstAttribute="top" secondItem="0rs-ra-VXq" secondAttribute="bottom" constant="59" id="RfG-U1-ebb"/>
+                            <constraint firstItem="0rs-ra-VXq" firstAttribute="top" secondItem="qRE-nM-Izh" secondAttribute="top" constant="179" id="eC2-qe-Y79"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="aVT-Tx-cPI"/>
+                    <connections>
+                        <outlet property="createProductButton" destination="2tu-1z-5bW" id="M4K-mw-5jD"/>
+                        <outlet property="showProductsButton" destination="0rs-ra-VXq" id="RvI-uL-jb7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B01-SZ-dMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="306"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

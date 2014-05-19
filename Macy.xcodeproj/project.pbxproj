@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD916099192992D2001EC592 /* ShowProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD916097192992D2001EC592 /* ShowProductsViewController.m */; };
+		CD91609A192992D2001EC592 /* ShowProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD916098192992D2001EC592 /* ShowProductsViewController.xib */; };
+		CD91609C19299454001EC592 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD91609B19299454001EC592 /* QuartzCore.framework */; };
+		CD91609E1929945E001EC592 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD91609D1929945E001EC592 /* libsqlite3.dylib */; };
+		CD9160A3192994C7001EC592 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9160A2192994C7001EC592 /* DBManager.m */; };
+		CD9160A81929A9B7001EC592 /* CreateProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9160A61929A9B7001EC592 /* CreateProductViewController.m */; };
+		CD9160A91929A9B7001EC592 /* CreateProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9160A71929A9B7001EC592 /* CreateProductViewController.xib */; };
+		CDEF83841928405900072F41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF83831928405900072F41 /* Foundation.framework */; };
+		CDEF83861928405900072F41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF83851928405900072F41 /* CoreGraphics.framework */; };
+		CDEF83881928405900072F41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF83871928405900072F41 /* UIKit.framework */; };
+		CDEF838E1928405900072F41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDEF838C1928405900072F41 /* InfoPlist.strings */; };
+		CDEF83901928405900072F41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEF838F1928405900072F41 /* main.m */; };
+		CDEF83941928405900072F41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEF83931928405900072F41 /* AppDelegate.m */; };
+		CDEF83971928405900072F41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEF83951928405900072F41 /* Main.storyboard */; };
+		CDEF839A1928405900072F41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEF83991928405900072F41 /* ViewController.m */; };
+		CDEF839C1928405900072F41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDEF839B1928405900072F41 /* Images.xcassets */; };
+		CDEF83A31928405900072F41 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF83A21928405900072F41 /* XCTest.framework */; };
+		CDEF83A41928405900072F41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF83831928405900072F41 /* Foundation.framework */; };
+		CDEF83A51928405900072F41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEF83871928405900072F41 /* UIKit.framework */; };
+		CDEF83AD1928405900072F41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDEF83AB1928405900072F41 /* InfoPlist.strings */; };
+		CDEF83AF1928405900072F41 /* MacyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEF83AE1928405900072F41 /* MacyTests.m */; };
+		CDEF83BE192840D700072F41 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEF83BD192840D700072F41 /* Product.m */; };
+		CDEF83C1192845DB00072F41 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = CDEF83C0192845DB00072F41 /* Products.json */; };
+		CDEF83C51928472500072F41 /* ProductsDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEF83C41928472500072F41 /* ProductsDataProvider.m */; };
+		CDF6D7741929C34E0016BB18 /* ShowProductsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF6D7721929C34E0016BB18 /* ShowProductsCell.m */; };
+		CDF6D7751929C34E0016BB18 /* ShowProductsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF6D7731929C34E0016BB18 /* ShowProductsCell.xib */; };
+		CDF6D77A1929C63D0016BB18 /* ProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF6D7781929C63D0016BB18 /* ProductDetailsViewController.m */; };
+		CDF6D77B1929C63D0016BB18 /* ProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF6D7791929C63D0016BB18 /* ProductDetailsViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDEF83A61928405900072F41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDEF83781928405900072F41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDEF837F1928405900072F41;
+			remoteInfo = Macy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD916096192992D2001EC592 /* ShowProductsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowProductsViewController.h; sourceTree = "<group>"; };
+		CD916097192992D2001EC592 /* ShowProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowProductsViewController.m; sourceTree = "<group>"; };
+		CD916098192992D2001EC592 /* ShowProductsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowProductsViewController.xib; sourceTree = "<group>"; };
+		CD91609B19299454001EC592 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CD91609D1929945E001EC592 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CD9160A1192994C7001EC592 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		CD9160A2192994C7001EC592 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		CD9160A51929A9B7001EC592 /* CreateProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateProductViewController.h; sourceTree = "<group>"; };
+		CD9160A61929A9B7001EC592 /* CreateProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateProductViewController.m; sourceTree = "<group>"; };
+		CD9160A71929A9B7001EC592 /* CreateProductViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateProductViewController.xib; sourceTree = "<group>"; };
+		CDEF83801928405900072F41 /* Macy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDEF83831928405900072F41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDEF83851928405900072F41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CDEF83871928405900072F41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CDEF838B1928405900072F41 /* Macy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Macy-Info.plist"; sourceTree = "<group>"; };
+		CDEF838D1928405900072F41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDEF838F1928405900072F41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDEF83911928405900072F41 /* Macy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Macy-Prefix.pch"; sourceTree = "<group>"; };
+		CDEF83921928405900072F41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CDEF83931928405900072F41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CDEF83961928405900072F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDEF83981928405900072F41 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CDEF83991928405900072F41 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CDEF839B1928405900072F41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CDEF83A11928405900072F41 /* MacyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDEF83A21928405900072F41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CDEF83AA1928405900072F41 /* MacyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacyTests-Info.plist"; sourceTree = "<group>"; };
+		CDEF83AC1928405900072F41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDEF83AE1928405900072F41 /* MacyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacyTests.m; sourceTree = "<group>"; };
+		CDEF83BC192840D700072F41 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		CDEF83BD192840D700072F41 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		CDEF83C0192845DB00072F41 /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
+		CDEF83C31928472500072F41 /* ProductsDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsDataProvider.h; sourceTree = "<group>"; };
+		CDEF83C41928472500072F41 /* ProductsDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsDataProvider.m; sourceTree = "<group>"; };
+		CDF6D7711929C34E0016BB18 /* ShowProductsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowProductsCell.h; sourceTree = "<group>"; };
+		CDF6D7721929C34E0016BB18 /* ShowProductsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowProductsCell.m; sourceTree = "<group>"; };
+		CDF6D7731929C34E0016BB18 /* ShowProductsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowProductsCell.xib; sourceTree = "<group>"; };
+		CDF6D7771929C63D0016BB18 /* ProductDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailsViewController.h; sourceTree = "<group>"; };
+		CDF6D7781929C63D0016BB18 /* ProductDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailsViewController.m; sourceTree = "<group>"; };
+		CDF6D7791929C63D0016BB18 /* ProductDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailsViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDEF837D1928405900072F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD91609E1929945E001EC592 /* libsqlite3.dylib in Frameworks */,
+				CD91609C19299454001EC592 /* QuartzCore.framework in Frameworks */,
+				CDEF83861928405900072F41 /* CoreGraphics.framework in Frameworks */,
+				CDEF83881928405900072F41 /* UIKit.framework in Frameworks */,
+				CDEF83841928405900072F41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEF839E1928405900072F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEF83A31928405900072F41 /* XCTest.framework in Frameworks */,
+				CDEF83A51928405900072F41 /* UIKit.framework in Frameworks */,
+				CDEF83A41928405900072F41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD916094192992AA001EC592 /* Main View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF83981928405900072F41 /* ViewController.h */,
+				CDEF83991928405900072F41 /* ViewController.m */,
+			);
+			name = "Main View Controller";
+			sourceTree = "<group>";
+		};
+		CD916095192992B6001EC592 /* Show Products View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDF6D7701929C3340016BB18 /* Cells */,
+				CD916096192992D2001EC592 /* ShowProductsViewController.h */,
+				CD916097192992D2001EC592 /* ShowProductsViewController.m */,
+				CDF6D7761929C6230016BB18 /* Products Detail View Controller */,
+			);
+			name = "Show Products View Controller";
+			sourceTree = "<group>";
+		};
+		CD91609F192994A1001EC592 /* Database Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CD9160A1192994C7001EC592 /* DBManager.h */,
+				CD9160A2192994C7001EC592 /* DBManager.m */,
+			);
+			name = "Database Manager";
+			sourceTree = "<group>";
+		};
+		CD9160A0192994B1001EC592 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF83BC192840D700072F41 /* Product.h */,
+				CDEF83BD192840D700072F41 /* Product.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		CD9160A41929A990001EC592 /* Create Product View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD9160A51929A9B7001EC592 /* CreateProductViewController.h */,
+				CD9160A61929A9B7001EC592 /* CreateProductViewController.m */,
+			);
+			name = "Create Product View Controller";
+			sourceTree = "<group>";
+		};
+		CDEF83771928405900072F41 = {
+			isa = PBXGroup;
+			children = (
+				CDEF83891928405900072F41 /* Macy */,
+				CDEF83A81928405900072F41 /* MacyTests */,
+				CDEF83821928405900072F41 /* Frameworks */,
+				CDEF83811928405900072F41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDEF83811928405900072F41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF83801928405900072F41 /* Macy.app */,
+				CDEF83A11928405900072F41 /* MacyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDEF83821928405900072F41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD91609D1929945E001EC592 /* libsqlite3.dylib */,
+				CD91609B19299454001EC592 /* QuartzCore.framework */,
+				CDEF83831928405900072F41 /* Foundation.framework */,
+				CDEF83851928405900072F41 /* CoreGraphics.framework */,
+				CDEF83871928405900072F41 /* UIKit.framework */,
+				CDEF83A21928405900072F41 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDEF83891928405900072F41 /* Macy */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF83BB192840AF00072F41 /* App Delegate */,
+				CDEF83B81928408000072F41 /* Model */,
+				CDEF83B91928408500072F41 /* View */,
+				CDEF83BA1928408800072F41 /* Controller */,
+				CDEF839B1928405900072F41 /* Images.xcassets */,
+				CDEF83C0192845DB00072F41 /* Products.json */,
+				CDEF838A1928405900072F41 /* Supporting Files */,
+			);
+			path = Macy;
+			sourceTree = "<group>";
+		};
+		CDEF838A1928405900072F41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF838B1928405900072F41 /* Macy-Info.plist */,
+				CDEF838C1928405900072F41 /* InfoPlist.strings */,
+				CDEF838F1928405900072F41 /* main.m */,
+				CDEF83911928405900072F41 /* Macy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDEF83A81928405900072F41 /* MacyTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF83AE1928405900072F41 /* MacyTests.m */,
+				CDEF83A91928405900072F41 /* Supporting Files */,
+			);
+			path = MacyTests;
+			sourceTree = "<group>";
+		};
+		CDEF83A91928405900072F41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF83AA1928405900072F41 /* MacyTests-Info.plist */,
+				CDEF83AB1928405900072F41 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDEF83B81928408000072F41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD9160A0192994B1001EC592 /* Product */,
+				CD91609F192994A1001EC592 /* Database Manager */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CDEF83B91928408500072F41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF83951928405900072F41 /* Main.storyboard */,
+				CD916098192992D2001EC592 /* ShowProductsViewController.xib */,
+				CD9160A71929A9B7001EC592 /* CreateProductViewController.xib */,
+				CDF6D7791929C63D0016BB18 /* ProductDetailsViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CDEF83BA1928408800072F41 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD9160A41929A990001EC592 /* Create Product View Controller */,
+				CD916095192992B6001EC592 /* Show Products View Controller */,
+				CD916094192992AA001EC592 /* Main View Controller */,
+				CDEF83C21928470F00072F41 /* Data Provider */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CDEF83BB192840AF00072F41 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF83921928405900072F41 /* AppDelegate.h */,
+				CDEF83931928405900072F41 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		CDEF83C21928470F00072F41 /* Data Provider */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF83C31928472500072F41 /* ProductsDataProvider.h */,
+				CDEF83C41928472500072F41 /* ProductsDataProvider.m */,
+			);
+			name = "Data Provider";
+			sourceTree = "<group>";
+		};
+		CDF6D7701929C3340016BB18 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CDF6D7711929C34E0016BB18 /* ShowProductsCell.h */,
+				CDF6D7721929C34E0016BB18 /* ShowProductsCell.m */,
+				CDF6D7731929C34E0016BB18 /* ShowProductsCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CDF6D7761929C6230016BB18 /* Products Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDF6D7771929C63D0016BB18 /* ProductDetailsViewController.h */,
+				CDF6D7781929C63D0016BB18 /* ProductDetailsViewController.m */,
+			);
+			name = "Products Detail View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDEF837F1928405900072F41 /* Macy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDEF83B21928405900072F41 /* Build configuration list for PBXNativeTarget "Macy" */;
+			buildPhases = (
+				CDEF837C1928405900072F41 /* Sources */,
+				CDEF837D1928405900072F41 /* Frameworks */,
+				CDEF837E1928405900072F41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Macy;
+			productName = Macy;
+			productReference = CDEF83801928405900072F41 /* Macy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDEF83A01928405900072F41 /* MacyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDEF83B51928405900072F41 /* Build configuration list for PBXNativeTarget "MacyTests" */;
+			buildPhases = (
+				CDEF839D1928405900072F41 /* Sources */,
+				CDEF839E1928405900072F41 /* Frameworks */,
+				CDEF839F1928405900072F41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDEF83A71928405900072F41 /* PBXTargetDependency */,
+			);
+			name = MacyTests;
+			productName = MacyTests;
+			productReference = CDEF83A11928405900072F41 /* MacyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDEF83781928405900072F41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jing Dai";
+				TargetAttributes = {
+					CDEF83A01928405900072F41 = {
+						TestTargetID = CDEF837F1928405900072F41;
+					};
+				};
+			};
+			buildConfigurationList = CDEF837B1928405900072F41 /* Build configuration list for PBXProject "Macy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDEF83771928405900072F41;
+			productRefGroup = CDEF83811928405900072F41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDEF837F1928405900072F41 /* Macy */,
+				CDEF83A01928405900072F41 /* MacyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDEF837E1928405900072F41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEF839C1928405900072F41 /* Images.xcassets in Resources */,
+				CDEF83C1192845DB00072F41 /* Products.json in Resources */,
+				CD9160A91929A9B7001EC592 /* CreateProductViewController.xib in Resources */,
+				CD91609A192992D2001EC592 /* ShowProductsViewController.xib in Resources */,
+				CDF6D7751929C34E0016BB18 /* ShowProductsCell.xib in Resources */,
+				CDEF838E1928405900072F41 /* InfoPlist.strings in Resources */,
+				CDF6D77B1929C63D0016BB18 /* ProductDetailsViewController.xib in Resources */,
+				CDEF83971928405900072F41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEF839F1928405900072F41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEF83AD1928405900072F41 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDEF837C1928405900072F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9160A3192994C7001EC592 /* DBManager.m in Sources */,
+				CDEF839A1928405900072F41 /* ViewController.m in Sources */,
+				CD916099192992D2001EC592 /* ShowProductsViewController.m in Sources */,
+				CDEF83C51928472500072F41 /* ProductsDataProvider.m in Sources */,
+				CD9160A81929A9B7001EC592 /* CreateProductViewController.m in Sources */,
+				CDF6D7741929C34E0016BB18 /* ShowProductsCell.m in Sources */,
+				CDEF83BE192840D700072F41 /* Product.m in Sources */,
+				CDEF83941928405900072F41 /* AppDelegate.m in Sources */,
+				CDEF83901928405900072F41 /* main.m in Sources */,
+				CDF6D77A1929C63D0016BB18 /* ProductDetailsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEF839D1928405900072F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEF83AF1928405900072F41 /* MacyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDEF83A71928405900072F41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDEF837F1928405900072F41 /* Macy */;
+			targetProxy = CDEF83A61928405900072F41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDEF838C1928405900072F41 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDEF838D1928405900072F41 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CDEF83951928405900072F41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDEF83961928405900072F41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDEF83AB1928405900072F41 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDEF83AC1928405900072F41 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDEF83B01928405900072F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CDEF83B11928405900072F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDEF83B31928405900072F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Macy/Macy-Prefix.pch";
+				INFOPLIST_FILE = "Macy/Macy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CDEF83B41928405900072F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Macy/Macy-Prefix.pch";
+				INFOPLIST_FILE = "Macy/Macy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CDEF83B61928405900072F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Macy.app/Macy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Macy/Macy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MacyTests/MacyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CDEF83B71928405900072F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Macy.app/Macy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Macy/Macy-Prefix.pch";
+				INFOPLIST_FILE = "MacyTests/MacyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDEF837B1928405900072F41 /* Build configuration list for PBXProject "Macy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDEF83B01928405900072F41 /* Debug */,
+				CDEF83B11928405900072F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDEF83B21928405900072F41 /* Build configuration list for PBXNativeTarget "Macy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDEF83B31928405900072F41 /* Debug */,
+				CDEF83B41928405900072F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDEF83B51928405900072F41 /* Build configuration list for PBXNativeTarget "MacyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDEF83B61928405900072F41 /* Debug */,
+				CDEF83B71928405900072F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDEF83781928405900072F41 /* Project object */;
+}

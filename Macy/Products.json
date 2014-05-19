@@ -1,0 +1,32 @@
+[
+    {
+        "id" : "1",
+        "name" : "Tommy Hilfiger American Dream Collection",
+        "description" : "Tommy Hilfiger's American Dream Collection is crafted with cotton & features a statement-making landscape of stars & stripes, for a bold, patriotic look",
+        "regularPrice" : "170.0",
+        "salePrice" : "120.0",
+        "productPhoto" : "http://slimages.macys.com/is/image/MCY/products/2/optimized/2075062_fpx.tif?bgc=255,255,255&wid=164&qlt=90,0&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg",
+        "colors" : ["blue", "yellow"],
+        "stores" : {"Mountain VIew" : "Avaliable", "Palo Alto" : "Not Avaliable"}
+    },
+    {
+        "id" : "2",
+        "name" : "Hotel Collection Modern Woven Pleats Bedding Collection",
+        "description" : "Rows of tailored pleats embellish pure cotton for a clean, polished appeal. Mix and match quilted accessories, decorative pillows and luxurious sheeting for a look of high style and indulgent comfort.",
+        "regularPrice" : "150.0",
+        "salePrice" : "120.0",
+        "productPhoto" : "http://slimages.macys.com/is/image/MCY/products/8/optimized/944568_fpx.tif?bgc=255,255,255&wid=164&qlt=90,0&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg",
+        "colors" : ["blue", "yellow"],
+        "stores" : {"Mountain VIew" : "Avaliable", "Palo Alto" : "Not Avaliable"}
+    },
+    {
+        "id" : "3",
+        "name" : "Echo Catalina Mini Duvet Cover Sets",
+        "description" : "Rows of tailored pleats embellish pure cotton for a clean, polished appeal. Mix and match quilted accessories, decorative pillows and luxurious sheeting for a look of high style and indulgent comfort.",
+        "regularPrice" : "120.0",
+        "salePrice" : "100.0",
+        "productPhoto" : "http://slimages.macys.com/is/image/MCY/products/4/optimized/1748504_fpx.tif?bgc=255,255,255&wid=164&qlt=90,0&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg",
+        "colors" : ["blue", "yellow"],
+        "stores" : {"Mountain VIew" : "Avaliable", "Palo Alto" : "Not Avaliable"}
+    }
+]
